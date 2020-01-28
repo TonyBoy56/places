@@ -21,7 +21,7 @@ function displayDestinationDetails(placesToDisplay) {
   var destinationList = $("ul#destinations");
   var htmlForDestinationInfo = "";
   placesToDisplay.destination.forEach(function(destination) {
-    htmlForDestinationInfo += "<li id=" + destination.id + ">" + destination.country + " " + destination.city + "</li>";
+    htmlForDestinationInfo += "<li id=" + "This summer I visited " + destination.id + ">" + destination.country + " " + destination.city + "</li>";
     });
     destinationList.html(htmlForDestinationInfo);
 };
