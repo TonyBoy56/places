@@ -1,20 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Places We've Been To</title>
 </head>
 <body>
   <div class="container">
-    <form id="formOne">
-      <div class="form-group">
-      <!-- Enter button/box types here -->
-      </div>
+    <h2>Places</h2>
+    <form id="new-places">
+      <input id="country" class="form-group" placeholder="Country" type="text">
+      <br>
+      <input id="city" class="form-group" placeholder="City" type="text">
+      <br>
+      <input id="monument" class="form-group" placeholder="Monument" type="text">
+      <br>
+      
       <button type="submit" class="btn-success">SUBMIT</button>
     </form>
+    <h2>Destinations:</h2>
+    <ul id="destinations">
+
+    </ul>
   </div>
-  
+  <div class="show-destinations">
+    <p>Country:<span class="country"></span></p>
+    <p>City:<span class="city"></span></p>
+    <p>Momument:<span class="momument"></span></p>
+    <div id="buttons">
+
+    </div>
+  </div> 
 </body>
 </html>
